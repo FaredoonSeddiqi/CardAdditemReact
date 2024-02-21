@@ -1,0 +1,257 @@
+:root{
+    --color-primary:#2584ff;
+    --color-secondary:#00d9ff;
+    --color-accent:#ff3400;
+    --color-heading:#fff;
+    --color-body:#918ca4;
+    --color-body-darker:#5c5577;
+    }
+  
+  
+  *, *::after ,*::before{
+    box-sizing: border-box;
+  }    
+  
+
+  .App{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  body{
+    font-family: Inter,Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: var(--color-body);
+  }
+.card {
+	position: static;
+	width: 280px;
+	height: 400px;
+	margin: 15px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 0.3s ease;
+	overflow: hidden;
+	background: #414852;
+	border-radius: 15px;
+	transition: all 0.8s ease-in-out;
+  }
+
+  .containercard{
+    width: 800px;
+    height: 800px;
+    margin-left: 10rem;
+  }
+
+  .cardtotal{
+    height:570px;
+    width: 400px;
+    background-color:white;
+    padding:2rem, 3rem;
+    transition: .3s ease-in-out;
+    margin-top: 2rem;
+    border-radius: 7px; 
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    
+  }
+
+  .h1,h2,h3 {
+    text-align: start;
+    border-radius: 3rem;
+  }
+
+  .cardContainer{
+    border-radius: 30px;
+  }
+  .cardContainer:hover {
+    box-shadow: 0px 36px 211px 6px #00956f;
+  }
+  
+  .cardHeader {
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 0;
+    color: #ffffff;
+  
+  }
+  
+  .cardHeader h4,
+  .cardHeader p {
+    margin-bottom: 0;
+  }
+  
+
+  .card {
+    display: grid;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .cardFooter {
+    align-self: end;
+  }
+  
+  .cardBody {
+
+    padding: 10px;
+    font-size: 12px;
+    text-align: justify;
+  }
+  
+  .cardFooter ul li {
+    cursor: pointer;
+  }
+  
+  .cardContainer {
+    position:relative;
+  }
+   
+  .cardContainer:hover .bgImgHover img {
+    transform: scale(3);
+  }
+
+/*img*/
+
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.img-area img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+.img-area:hover img {
+	transform: scale(1.1);
+}
+
+
+.image1 {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+}
+.image1 img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+
+  /*button*/
+
+  .btn{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border: 0;
+    border-radius: 40px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    margin: 1rem 0;
+    margin-bottom: 0;
+  
+  }
+
+  .btn .icon{
+    width: 2rem;
+    height: 1rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+  .btn-primary{
+    background: var(--color-primary);
+    color:#fff;
+  }
+  .btn-secondary{
+    background: var(--color-secondary);
+    color:#fff;
+  }
+  .btn--accent{
+    background: var(--color-accent);
+    color: #fff;
+  }
+  .btn-block{
+    width: 100%;
+    display: inline-block;
+  
+  }
+  
+  .btn__stratched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  
+  .btn-outline{
+    background:#fff;
+    color:var(--color-heading);
+    border: 2px solid var(--color-heading);
+  }
+  
+  .btn-outline:hover{
+    background:#fff;
+    color:var(--color-heading);
+  }
+
+  .btnde{
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: var(--color-accent);
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border: 0;
+    border-radius: 40px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+ 
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+/*info*/
+
+.info {
+	padding: 10px;
+	text-align: center;
+	color: #ddd;
+}
+.info h3 {
+	margin: 15px 0 10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', sans-serif;
+}
+.info .price {
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: aqua;
+}
+
+
+.table, th, td {
+  padding: 2px;
+  text-align: left;
+  border: 1px solid;
+  width:6rem;
+}
